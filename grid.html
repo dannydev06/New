@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        body{
+            background-color: rgba(255, 255, 255, .1);
+            backdrop-filter: blur(15px);
+        }
+        .container{
+            max-width: 1224px;
+            width: 90%;
+            margin: auto;
+            padding: 40px;
+        }
+        .photo-gallery{
+            display: flex;
+            gap: 20px;
+        }
+        .column{
+            display:flex;
+            flex-direction: column;
+            gap:20px;
+        }
+        .photo img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+        #dth{
+            object-position: right;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="photo-gallery">
+                <div class="column">
+                    <div class="photo">
+                        <img src="/DTH.jpg" id="dth" alt="Death">
+                        <img src="/joker.jpg" alt="Joker">
+                        <img src="/Shark.jpg" alt="Shark">
+                    </div>
+                </div>
+                    <div class="column">
+                        <div class="photo">
+                            <img src="/SPX.jpg" alt="Death">
+                            <img src="/spidey.jpg" alt="Joker">
+                            <img src="/purple.jpg" alt="Shark">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="photo">
+                            <img src="/joker.jpg" alt="Death">
+                            <img src="/DTH.jpg" alt="Joker">
+                            <img src="/SPX.jpg" alt="Shark">
+                        </div>
+            </div>
+        </div>
+    </body>
+</html>

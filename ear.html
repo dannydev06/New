@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descriotion">
+    <title>Document</title>
+    <!--Sticky header-->
+</head>
+<style>
+    *{
+        margin: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        background: center  no-repeat;
+        background-attachment: fixed;
+        background-image: url(/joker.jpg);
+        background-size: cover;
+    }
+    header{
+        background: rgba(255, 255, 255, 0.3) no-repeat;
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        user-select: none;
+        border-bottom: #a8a8a8 solid 2px;
+        height: 1.75cm;
+        width: 100svw;
+        box-shadow: -5px 5px 10px 2px #000000;
+        position: sticky;
+        top: 0%;
+        z-index: 1;
+    }
+    .head{
+        list-style-type: none;
+        text-align: center;
+        padding-top: 15pt;
+        padding-bottom: 5pt ;
+    }
+    li{
+        display: inline;
+        padding-left: 5pt;
+        padding-right: 5pt;
+    }
+    .links{
+        text-decoration: none;
+        color:  #000000;
+        transition: all .5s 0.5s;
+    }
+    .links:hover{
+        color: #ad2525;
+        border-bottom: 1px solid #a52a2a;
+    }
+    .some{
+        width: 100px;
+        color: #a52a2a;
+        border: 2px solid #a8a8a8;
+        border-radius: 0px 12px 0px 0px;
+        box-shadow: 2px 12px 9px 2px #000000;
+        height: 100svh;
+        float: left;
+        background-color: #646464;
+        position: fixed;
+    }
+    .some .inside{
+        padding-top: 12px;
+        display: block;
+        text-align: center;
+    }
+    #sty{
+        border: 2px solid grey;
+        border-radius: 2px;
+        font-size: clamp(10pt, 0.1rem, 0.2em);
+    }
+    .sec{
+        width: min(150px,  3.75cm);
+        height: fit-content;
+        padding:5pt;
+        text-align: center;
+        padding-top: 15pt;
+        line-height: 1.5;
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        float:right;
+        margin-top: 1cm;
+        overflow-wrap: break-word;
+        container-type: inline-size;
+        border: 2px #646464 solid;
+        border-radius: 12px;
+        clear: both;
+    }
+    .sec > #page{
+        font-size: 9cqi;
+    }
+    .sec > #ha{
+        font-size: 13.75cqi;
+    }
+    #ha{
+        padding-bottom: 2px ;
+        text-align: center;
+        transform:translateY(-7.75px);
+        border-bottom: #000000 1px solid;
+        text-shadow: 2px 12px 9px 2px #000000;
+    }
+    hr{
+        display: inline;
+        width: 0.5cm;
+        border: #ad2525 solid 1px;
+        border-radius:12px ;
+    }
+    .SeBar{
+        border: #a52a2a 2px solid;
+        text-align: center;
+        border-radius: 7px;
+        width:33.75mm;
+        margin-bottom: 0.25cm;
+        outline: 0;
+    }
+    .SeBar::placeholder{
+        text-align: left;
+        font-size: 1em;
+        padding: 5px;
+    }
+    .main--content{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 2px #646464 solid;
+        border-radius: 12px;
+        margin-left: 12pt;
+        margin-top: 12pt;
+        color: #fff;
+        line-break: loose;
+        line-height: 1.2;
+        width: 45%;
+        padding: 5pt;
+        position: relative;
+        display: inline;
+        float: left;
+    }
+    .main{
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 2px #646464 solid;
+        border-radius: 12px;
+        margin-left: 12pt;
+        margin-top: 12pt;
+        color: #fff;
+        line-break: loose;
+        line-height: 1.2;
+        width: calc(25% - .2cm);
+        padding: 5pt;
+        position: relative;
+        display: inline-block;
+        height :fit-content;
+        
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90svw;
+        height: 20svh;
+    }
+    .imge{
+        width: 5.5cm;
+        height:5cm;
+        object-fit: cover;
+        object-position: center;
+        padding: 5pt;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        margin:2pt ;
+        border: #646464 solid 1px;
+        border-radius: 12px;
+        transition: all 1s;
+    }
+    .imge:hover{
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <header>
+        <nav>
+            <ul class="head">
+                <li><a href="#" class="links" target="_blank">HOME</a></li>
+                <li><a href="#" class="links" target="_blank">LOGIN</a></li>
+                <li><a href="#" class="links" target="_blank">CONTACT</a></li>
+                <li><a href="#" class="links" target="_blank">ABOUT</a></li><hr>
+                <input type="search" name="searchBar" class="SeBar" title="Search Bar" placeholder="Search Bar">
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="sec" id="sty" draggable="true">
+            <h1 id="ha">Daniel !</h1>
+            <p id="page" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse facilis sed sunt culpa inventore quibusdam minus consequuntur magnam nulla enim alias fugit maxime optio eum corrupti possimus amet provident error totam quo, modi nostrum. Repudiandae, dolorum distinctio, excepturi minima alias eius magni
+                sit obcaecati earum quia magnam neque, architecto voluptas!
+            </p>
+        </section>   
+            <section class="main--content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam dolore nobis architecto ipsam quos corporis quae, laboriosam sed autem quam culpa et accusantium, natus sit aliquid, consectetur excepturi perferendis?
+                </p>
+            </section>  
+            <section class="main--content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius magnam dolore nobis architecto ipsam quos corporis quae, laboriosam sed autem quam culpa et accusantium, natus sit aliquid, consectetur excepturi perferendis?
+                </p>
+            </section> 
+            <section class="main">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus repudiandae, eaque eveniet minus vero quo quia nulla, blanditiis unde modi, iure ullam asperiores exercitationem magnam laudantium ab est dolores? Corporis aliquid eveniet quam tenetur
+                </p>
+            </section> 
+        <section>
+            <div class="flex">
+                <img src="/joker.jpg" class="imge">
+                <img src="/DTH.jpg" class="imge">
+                <img src="/SPX.jpg" class="imge">
+                <img src="/UKE.jpg" class="imge">
+                <img src="/Shark.jpg" class="imge">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>

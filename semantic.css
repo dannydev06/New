@@ -1,0 +1,30 @@
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+.sec{
+    height: 13cm;
+    padding: 0%;
+}
+.para{
+    display:block;
+    height: 9cm;
+    width: 100svw;
+    text-align: center;
+    padding: 3cm;
+    font-size: 42px;
+    margin: 0% auto;
+    color: rgba(255, 255, 255, 0.7);
+    background: url(/spidey.jpg) top no-repeat;
+    background-size: cover;
+}
+.parag{
+    padding: 14pt;
+    overflow-wrap: break-word;
+}
+
+.parag:nth-child(2),.parag:nth-child(2){
+    margin: 40px 30px;
+}

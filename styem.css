@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:center  no-repeat;
+    background-attachment: fixed;
+    background-image: url(/purple.jpg);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+}
+@media (width:320px) {
+    body{
+    background: center  no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url(/UKE.jpg);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    }
+}
+header{
+    width: 75pt;
+    height: 100svh;
+    float: left;
+    background-color: #ffffff;
+    clear: both;
+    border: solid 2px #4b4747;
+    border-radius: 0px 12px 0px 0px;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px) ;
+}
+ul{
+    position: relative;
+    top: 4cm;
+    left: -23pt;
+    list-style-type:none;
+}
+li{
+    padding: 5pt;
+}
+.links{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 1s .5s;
+}
+.links:hover{
+    color: #000;
+}
+.login--page{
+    padding-top: 20px;
+    translate: 0% 5cm ;
+    color: black;
+    margin: 0 auto;
+    height: 150pt;
+    width: max(250px, 7cm );
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: #4b4747 2px solid;
+    border-radius: 12px;
+    container-type: inline-size;
+    box-shadow: 6px 10px 12px 2px rgba(255, 255, 255, .5),
+    6px 5px 15px 2px rgba(0, 0, 0, .5)    ;
+}
+form{
+    padding-left: 1.5cm;
+}
+.login--page .name{
+    font-size:7.3cqi;
+}
+.name{
+    padding-bottom: 15pt;
+}
+.Inputs{
+    
+    width:4.25cm;
+    border: #4b4747 2px solid;
+    border-radius: 7px;
+    text-align: center;
+    height: .7cm;
+    outline: none;
+}
+.Inputs::placeholder{
+
+    text-align: center;
+    padding: 5pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pass{
+    font-weight: bolder;
+}
+.primary--button{
+    margin-top: 5pt;
+    padding:2pt;
+    position: relative;
+    left: 16pt;
+    width: 1.5cm;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(65, 61, 61, 0.1);
+    backdrop-filter: blur(12px);
+    font-size: 10.75pt;
+}
